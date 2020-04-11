@@ -6,7 +6,6 @@ from sklearn import preprocessing
 import os
 import numpy as np
 import sys
-import argparse
 
 file_dir = os.path.dirname(__file__)
 sys.path.append(file_dir)
@@ -21,10 +20,6 @@ filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'ann_based_
 
 base_path = os.path.dirname(os.path.realpath(__file__))
 WEIGHT_PATH = os.path.join(base_path, 'speaker_embedding/model/resnet34_vlad8_ghost2_bdim512_deploy/weights.h5')
-
-parser = argparse.ArgumentParser()
-# set up training configuration.
-parser.add_argument('--input', required=True, type=str)
 
 le = preprocessing.LabelEncoder()
 le.classes_ = np.load('labels.npy')
@@ -61,5 +56,5 @@ def predict(audio_file):
 
 
 if __name__ == '__main__':
-    args = parser.parse_args()
-    predict(args.input)
+    input_file = '/home/robot/Downloads/y2mate.com - Donald Trump Really Wants You to Take This Drug_ecJXUX1XmfY_144p.mp4'
+    predict(input_file)

@@ -28,8 +28,8 @@
         - Extract features using ```python embedding_extraction.py``` 
         - To train ANN tree use ```python train.py```
 - Test
-    - For testing use ```python test.py --input input_file```
-        - **If file is not in wav format, it is converted and only first 30 seconds take as input**
+    - For testing use edit ```test.py``` provide input file path
+        - **If file is not in wav format, it is converted and only first 30 seconds taken as input**
     - Final prediction will give top 3 predicted speaker names
     
     

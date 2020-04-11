@@ -1,0 +1,11 @@
+numpy==1.18.1
+annoy==1.16.3
+keras==2.3.1
+librosa==0.7.2
+matplotlib==3.2.1
+nlpaug==0.0.13.3
+pydub==0.23.1
+scipy==1.4.1
+scikit_learn==0.22.2.post1
+tensorflow==2.0.0
+youtube_dl==2020.3.24
